@@ -1,0 +1,28 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+ 
+    ------------------------------------------- **/
+.page-wrap {
+    position: relative;
+    @include dims(100%);
+}
+
+.shapes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shape {
+    @include dims(25%, 300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+@each $color, $bgcolor in $colors {
+    .block-#{$color} {
+        background: $bgcolor;
+    }
+}
