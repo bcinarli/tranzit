@@ -1,0 +1,126 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+ 
+    ------------------------------------------- **/
+[class*="tranzit-"] {
+    @include app-transition();
+
+    position: relative;
+    @include dims(32px);
+    padding: 0;
+
+    &:before,
+    &:after {
+        content: "";
+    }
+
+    &:before,
+    &:after,
+    .inner-tranzit {
+        @include app-transition();
+        position: relative;
+        display: block;
+    }
+}
+
+%bars {
+    &:before,
+    .inner-tranzit,
+    &:after {
+        width: 100%;
+        height: 6px;
+        margin: 3px 0;
+        background: #fff;
+    }
+}
+
+%menu {
+    @extend %bars;
+}
+
+%arrow {
+    @extend %bars;
+
+    &:before,
+    &:after {
+        width: 60%;
+    }
+}
+
+%arrow-left {
+    &:before,
+    &:after {
+        left: 0;
+    }
+
+    &:before {
+        @include transform(rotate(-35deg));
+        top: 3px;
+    }
+
+    &:after {
+        @include transform(rotate(35deg));
+        bottom: 3px;
+    }
+}
+
+%arrow-right {
+    &:before,
+    &:after {
+        left: 40%;
+    }
+
+    &:before {
+        @include transform(rotate(35deg));
+        top: 3px;
+    }
+
+    &:after {
+        @include transform(rotate(-35deg));
+        bottom: 3px;
+    }
+}
+
+%cross {
+    @extend %bars;
+
+    &:before {
+        @include transform(rotate(45deg));
+        top: 13px;
+    }
+
+    &:after {
+        @include transform(rotate(-45deg));
+        top: 6.5px;
+    }
+}
+
+.tranzit-menu {
+    @extend %menu;
+}
+
+[class*="tranzit-arrow-"],
+[class*="morph-to-arrow-"]:hover {
+    @extend %arrow;
+}
+
+.tranzit-arrow-left {
+    @extend %arrow-left;
+}
+
+.tranzit-arrow-right {
+    @extend %arrow-right;
+}
+
+.tranzit-cross {
+    @extend %cross;
+}
+
+.morph-to-arrow-left:hover {
+    @extend %arrow-left;
+}
+
+.morph-to-arrow-right:hover {
+    @extend %arrow-right;
+}
