@@ -1,0 +1,4 @@
+*.idea
+*.codekit
+*.sass-cache
+bower_components
