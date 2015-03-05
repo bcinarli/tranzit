@@ -1,0 +1,27 @@
+{
+  "name": "tranzit",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bcinarli/tranzit",
+  "authors": [
+    "Bilal Çınarlı <bcinarli@gmail.com>"
+  ],
+  "description": "Meaningful transitions for icons",
+  "keywords": [
+    "css",
+    "sass",
+    "transition"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "caffeine": "~0.3.0",
+    "melange": "~0.3.4"
+  }
+}
