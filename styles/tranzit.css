@@ -391,16 +391,19 @@
     display: block; }
 
 .tranzit-menu:before, [class*="tranzit-arrow-"]:before,
-[class*="morph-to-arrow-"]:hover:before, .tranzit-cross:before, .tranzit-plus:before, .tranzit-minus:before, .tranzit-magnify:before, .tranzit-play:before,
+[class*="morph-to-arrow-"]:hover:before, .tranzit-cross:before, .tranzit-plus:before, .morph-to-cross:hover:before, .morph-to-plus:hover:before, .tranzit-minus:before, .morph-to-minus:hover:before, .tranzit-magnify:before, .tranzit-play:before,
 .tranzit-menu .inner-tranzit,
 [class*="tranzit-arrow-"] .inner-tranzit,
 [class*="morph-to-arrow-"]:hover .inner-tranzit,
 .tranzit-cross .inner-tranzit,
 .tranzit-plus .inner-tranzit,
+.morph-to-cross:hover .inner-tranzit,
+.morph-to-plus:hover .inner-tranzit,
 .tranzit-minus .inner-tranzit,
+.morph-to-minus:hover .inner-tranzit,
 .tranzit-magnify .inner-tranzit,
 .tranzit-play .inner-tranzit, .tranzit-menu:after, [class*="tranzit-arrow-"]:after,
-[class*="morph-to-arrow-"]:hover:after, .tranzit-cross:after, .tranzit-plus:after, .tranzit-minus:after, .tranzit-magnify:after, .tranzit-play:after {
+[class*="morph-to-arrow-"]:hover:after, .tranzit-cross:after, .tranzit-plus:after, .morph-to-cross:hover:after, .morph-to-plus:hover:after, .tranzit-minus:after, .morph-to-minus:hover:after, .tranzit-magnify:after, .tranzit-play:after {
   width: 100%;
   height: 6px;
   margin: 3px 0;
@@ -448,23 +451,23 @@
   transform: rotate(-45deg);
   top: 6.5px; }
 
-.tranzit-plus:before {
+.tranzit-plus:before, .morph-to-cross:hover:before, .morph-to-plus:hover:before {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 16px; }
-.tranzit-plus:after {
+.tranzit-plus:after, .morph-to-cross:hover:after, .morph-to-plus:hover:after {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   top: 6.5px; }
 
-.tranzit-minus:before {
+.tranzit-minus:before, .morph-to-minus:hover:before {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   top: 16px; }
-.tranzit-minus:after {
+.tranzit-minus:after, .morph-to-minus:hover:after {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);

@@ -203,3 +203,13 @@
 .morph-to-arrow-right:hover {
     @extend %arrow-right;
 }
+
+.morph-to-cross:hover {
+    @extend %plus;
+}
+.morph-to-minus:hover{
+    @extend %minus
+}
+.morph-to-plus:hover{
+    @extend %plus
+}
