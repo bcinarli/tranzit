@@ -2,3 +2,4 @@
 *.codekit
 *.sass-cache
 bower_components
+node_modules
