@@ -1,379 +1,3 @@
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Tranzit Styles
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/**
- * System wide settings
- *
- * All the imported values are set to "null" if they have a default value.
- * So if you want to use them as default, do not change to null value.
- */
-/** -------------------------------------------
-    Settings for default overwrites and
-    GUI related variables
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    System supports
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Default class/definition names
-    ------------------------------------------- **/
-/**
- * Name space prefix
- * Adds a defined namespace prefix to generated class names
- */
-/**
- * Class names for grid
- * @default $row-name: 'row'
- * @default $column-name: 'column'
- * @default $column-name-plural: 'columns'
- */
-/**
- * Button names for action
- *
- * @default $action-button: '-action'; // only used for similar class selector
- * @default $primary-button: 'primary-action';
- * @default $secondary-button: 'secondary-action';
- * @default $tertiary-button: 'tertiary-action';
- * @default $cancel-button: 'cancel-action';
- */
-/**
- * Folders
- * Not actually a namespace but folder names also have different preferences
- * @default $images: '../images/'; relative to styles folder
- * @default $retina-suffix: '@2x'
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Animation Related Variables
-    ------------------------------------------- **/
-/**
- * Duration
- * 
- * Duration time for transition animations
- * @default .4s
- */
-/**
- * Easing
- *
- * Easing style
- * @default ease
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Size Definitions
-    ------------------------------------------- **/
-/**
- * Spacing in element
- *
- * Sets the padding sizes for an element
- * @default $base-spacing 1em
- * @default $base-input-spacing 5px
- */
-/**
- * Grid gutter and columns
- *
- * Defines the grid gutter size and column count in a row
- * Grid columns floated by default. But it is optional whether float or not
- * for percentage widths.
- * @default $base-gutter: 20px
- * @default $base-grid-columns: 18
- * @default $base-float-widths: true
- */
-/**
- * Border Widths
- *
- * Applied border with for input fields and table borders
- * @default $base-border-width: 1px;
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Fonts
-    ------------------------------------------- **/
-/**
- * Global font definitions
- * @default $base-font-size: 16px
- * @default $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
- * @default $base-line-height: 1.5
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Colors
-    ------------------------------------------- **/
-/**
- * Named Colors
- *
- * Some named colors for inheriting colors over different variables
- * @default $color-primary    : #009bdc;
- * @default $color-secondary  : #67af00;
- * @default $color-tertiary   : #ffa900;
- * @default $color-cancel     : #e87352;
- * @default $color-error      : $color-cancel;
- * @default $color-text       : #222;
- * @default $color-light-gray : #e5e5e5;
- * @default $color-gray       : #c6c6c6;
- * @default $color-dark-gray  : #a6a6a6;
- * @default $color-white      : #fff;
- * @default $color-black      : #000;
- */
-/**
- * Metro Colors
- */
-/**
- * Simple colors for general styling
- * @default $base-color: #222
- */
-/**
- * Border Colors
- *
- * Colors applied to border in focus, disabled, readonly and stationary state
- * @default $base-border-color: #c6c6c6;
- * @default $base-border-highlight: #a6a6a6;
- * @default $base-border-disabled: #e9e9e9;
- * @default $base-border-readonly: #c6c6c6;
- */
-/**
- * Field Background Colors
- *
- * Color applied to field background in focus, disabled, readonly and stationary state
- * @default $base-field-background: #fff;
- * @default $base-field-highlight: #fff;
- * @default $base-field-disabled: #c6c6c6;
- * @default $base-field-readonly: #e5e5e5;
- */
-/**
- * Button colors
- */
-/**
- * Default Button
- *
- * Unstyled, normal button
- * @default $base-button-color: #e5e5e5;
- * @default $base-button-text-color: #222;
- */
-/**
- * Primary Action Button
- *
- * Maybe used for call-to-action button or/and save/submit buttons in forms
- * @default $base-primary-color: #009bdc;
- * @default $base-primary-text-color: #fff;
- */
-/**
- * Secondary Action Button
- *
- * Useful for indication secondary action in a form near the primary action button
- * @default $base-secondary-color: #67af00;
- * @default $base-secondary-text-color: #fff;
- */
-/**
- * Tertiary Action Button
- *
- * Useful for actions whether they are not fit for primary or secondary
- * @default $base-tertiary-color: #ffa900;
- * @default $base-tertiary-text-color: #fff;
- */
-/**
- * Cancel Action Button
- *
- * Simply used for cancel button for a form or call-to-action, confirmation etc.
- * @default $base-cancel-color: #e87352;
- * @default $base-cancel-text-color: #fff;
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Caffeine 
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    System Functions for internal usage
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Generic Functions
-    ------------------------------------------- **/
-/**
-  * Remove units
-  */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Text Related Functions
-    ------------------------------------------- **/
-/**
-  * Rem to PX
-  */
-/**
- * REM converter
- * in style's config, we hope to have a base-font-size variable,
- * if not, we define it according to standart html font-size
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    String Manipulation Functions
-    ------------------------------------------- **/
-/**
-  * String Replacement
-  * Mimics the PHP's str_replace function
-  * @param {string} $search   The value being searched for, otherwise known as the needle
-  * @param {string} $replace  The replacement value that replaces found search values
-  * @param {string} $subject  The string being searched and replaced on, otherwise known as the haystack.
-  */
-/**
-  * Case insensitive String Replacement
-  * Mimics the PHP's str_ireplace function
-  * @param {string} $search   The value being searched for, otherwise known as the needle
-  * @param {string} $replace  The replacement value that replaces found search values
-  * @param {string} $subject  The string being searched and replaced on, otherwise known as the haystack.
-  */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Mixins for Internal Melange Usage
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Generic Mixins
-    ------------------------------------------- **/
-/**
- * Adds prefixed version of a property according to listed vendors
- */
-/**
- * Adds prefixed version of values in a property
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Text Related Mixins
-    ------------------------------------------- **/
-/**
- * Fontface
- */
-/**
- * Font-Size callback
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Size Related Mixins
-    ------------------------------------------- **/
-/**
- * Square or desired width-height for an element
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    CSS3 Related Mixins
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Background Gradient Mixins
-    ------------------------------------------- **/
-/**
- * Simple Linear gradient
- * Gets the linear gradient content as a parameter and outputs the prefixed version.
- * For old browsers do not forget to add fallback color/image before mixin
- * Uses new linear gradient version. Not supporting Safari 5 or older and IE9 and older versions
- *
- * @param string $content
- */
-/**
- * Simple Radial gradient
- * Gets the radial gradient content as a parameter and outputs the prefixed version.
- * For old browsers do not forget to add fallback color/image before mixin
- * Uses new linear gradient version. Not supporting Safari 5 or older and IE9 and older versions
- *
- * @param $content
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Box Shadow
-    ------------------------------------------- **/
-/**
- * Simple Box shadow
- *
- * @param $content: box-shadow content
- * http://caniuse.com/#search=box-shadow 
- * current spec, only Android browser 2.3 need -webkit prefix
- * You can use standart CSS box shadow definition
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Transition Related Mixins
-    ------------------------------------------- **/
-/**
- * CSS Transition
- *
- * Outputs CSS3 transition code with defined prefixes
- * http://caniuse.com/#search=transition
- * current spec, older Android browsers and Safari 5.1 need -webkit
- * You can use standart CSS box shadow definition
- */
-/**
- * App Transition
- *
- * General transition definition for app
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Transform Related Mixins
-    ------------------------------------------- **/
-/**
- * CSS Transform
- *
- * Outputs CSS3 tranform code with defined prefixes
- * http://caniuse.com/#search=transform
- * current spec, Safari, Android browser and IE9 need vendor prefix
- */
-/**
- * CSS Transform Origin
- *
- * Outputs CSS3 tranform-origin code with defined prefixes
- * http://caniuse.com/#search=transform
- * current spec, Safari, Android browser and IE9 need vendor prefix
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Media Query Mixins
-    ------------------------------------------- **/
-/**
- * Retina Image
- */
-/**
- * Retina
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Arrow
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Placeholder
-    ------------------------------------------- **/
-/**
-  * Styles input elements' placeholder. 
-  * @param $self: true, if it is true, styles applied to class itself
-  *			if false, styles applied to the child elements
-  */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Positions
-    ------------------------------------------- **/
-/**
-  * Center
-  * Applied to absolute positined elements. 
-  * Element is centered both vertically and horizontally
-  */
-/**
-  * Vertical Center
-  */
-/**
- * Horizontal Center
- * Centers the element horizontally 
- * Uses margin: 0 auto; when $type defined as "static"
- * By default it uses the 
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
- 
-    ------------------------------------------- **/
 [class*="tranzit-"] {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -381,43 +5,34 @@
   width: 32px;
   height: 32px;
   padding: 0; }
-  [class*="tranzit-"]:before, [class*="tranzit-"]:after {
-    content: ""; }
-  [class*="tranzit-"]:before, [class*="tranzit-"]:after,
-  [class*="tranzit-"] .inner-tranzit {
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    position: relative;
-    display: block; }
 
-.tranzit-menu:before, [class*="tranzit-arrow-"]:before,
-[class*="morph-to-arrow-"]:hover:before, .tranzit-cross:before, .tranzit-plus:before, .tranzit-minus:before, .tranzit-magnify:before, .tranzit-play:before,
-.tranzit-menu .inner-tranzit,
-[class*="tranzit-arrow-"] .inner-tranzit,
-[class*="morph-to-arrow-"]:hover .inner-tranzit,
-.tranzit-cross .inner-tranzit,
-.tranzit-plus .inner-tranzit,
-.tranzit-minus .inner-tranzit,
-.tranzit-magnify .inner-tranzit,
-.tranzit-play .inner-tranzit, .tranzit-menu:after, [class*="tranzit-arrow-"]:after,
-[class*="morph-to-arrow-"]:hover:after, .tranzit-cross:after, .tranzit-plus:after, .tranzit-minus:after, .tranzit-magnify:after, .tranzit-play:after {
+[class*="tranzit-"]:before, [class*="tranzit-"]:after {
+  content: ""; }
+
+[class*="tranzit-"]:before, [class*="tranzit-"]:after, [class*="tranzit-"] .inner-tranzit {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: relative;
+  display: block; }
+
+.tranzit-menu:before, [class*="tranzit-arrow-"]:before, [class*="morph-to-arrow-"]:hover:before, .tranzit-cross:before, .tranzit-plus:before, .tranzit-minus:before, .tranzit-magnify:before, .tranzit-play:before, .tranzit-menu .inner-tranzit, [class*="tranzit-arrow-"] .inner-tranzit, [class*="morph-to-arrow-"]:hover .inner-tranzit, .tranzit-cross .inner-tranzit, .tranzit-plus .inner-tranzit, .tranzit-minus .inner-tranzit, .tranzit-magnify .inner-tranzit, .tranzit-play .inner-tranzit, .tranzit-menu:after, [class*="tranzit-arrow-"]:after, [class*="morph-to-arrow-"]:hover:after, .tranzit-cross:after, .tranzit-plus:after, .tranzit-minus:after, .tranzit-magnify:after, .tranzit-play:after {
   width: 100%;
   height: 6px;
   margin: 3px 0;
   background: #fff; }
 
-[class*="tranzit-arrow-"]:before,
-[class*="morph-to-arrow-"]:hover:before, [class*="tranzit-arrow-"]:after,
-[class*="morph-to-arrow-"]:hover:after {
+[class*="tranzit-arrow-"]:before, [class*="morph-to-arrow-"]:hover:before, [class*="tranzit-arrow-"]:after, [class*="morph-to-arrow-"]:hover:after {
   width: 60%; }
 
 .tranzit-arrow-left:before, .morph-to-arrow-left:hover:before, .tranzit-arrow-left:after, .morph-to-arrow-left:hover:after {
   left: 0; }
+
 .tranzit-arrow-left:before, .morph-to-arrow-left:hover:before {
   -webkit-transform: rotate(-35deg);
   -ms-transform: rotate(-35deg);
   transform: rotate(-35deg);
   top: 3px; }
+
 .tranzit-arrow-left:after, .morph-to-arrow-left:hover:after {
   -webkit-transform: rotate(35deg);
   -ms-transform: rotate(35deg);
@@ -426,11 +41,13 @@
 
 .tranzit-arrow-right:before, .morph-to-arrow-right:hover:before, .tranzit-arrow-right:after, .morph-to-arrow-right:hover:after {
   left: 40%; }
+
 .tranzit-arrow-right:before, .morph-to-arrow-right:hover:before {
   -webkit-transform: rotate(35deg);
   -ms-transform: rotate(35deg);
   transform: rotate(35deg);
   top: 3px; }
+
 .tranzit-arrow-right:after, .morph-to-arrow-right:hover:after {
   -webkit-transform: rotate(-35deg);
   -ms-transform: rotate(-35deg);
@@ -442,6 +59,7 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 16px; }
+
 .tranzit-cross:after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -453,17 +71,19 @@
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 16px; }
+
 .tranzit-plus:after {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
-  top: 6.5px; }
+  top: 8px; }
 
 .tranzit-minus:before {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   top: 16px; }
+
 .tranzit-minus:after {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -478,6 +98,7 @@
   border: 4px solid #FFF;
   top: 0px;
   left: 14px; }
+
 .tranzit-magnify:after {
   -webkit-transform: rotate(300deg);
   -ms-transform: rotate(300deg);
@@ -492,6 +113,7 @@
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   top: 16px; }
+
 .tranzit-play:after {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);

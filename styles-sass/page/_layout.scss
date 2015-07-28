@@ -3,6 +3,16 @@
 /** -------------------------------------------
  
     ------------------------------------------- **/
+html, body {
+    @include dims(100%);
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .page-wrap {
     position: relative;
     @include dims(100%);
