@@ -1,7 +1,7 @@
 /* @author Bilal Cinarli */
 
 /** -------------------------------------------
-    Tranzit Shapes
+ 
     ------------------------------------------- **/
 [class*="tranzit-"] {
     @include app-transition();
@@ -106,7 +106,7 @@
 
     &:after {
         @include transform(rotate(180deg));
-        top: 8px;
+        top: 6.5px;
     }
 }
 
